@@ -38,12 +38,12 @@ namespace :cassandra do
   namespace :modules do
     task :install, :roles => [:cassandra] do
       set :user, "root"
-      run "#{puppet_p} module install gini/cassandra"
+      run "#{puppet_p} module install msimonin/cassandra"
    end
 
     task :uninstall, :roles => [:cassandra] do
       set :user, "root"
-      run "#{puppet_p} module uninstall gini/cassandra"
+      run "#{puppet_p} module uninstall msimonin/cassandra"
    end
 
   end
